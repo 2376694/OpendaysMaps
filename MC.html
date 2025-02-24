@@ -37,10 +37,11 @@
     li a:hover {
         background-color: rgb(87, 33, 33);
 
-    }
+    }S
 
 h1{font-size: 40px;}
 h2{font-size: 60px;}
+p{font-size: 30px;}
 .Center {
     text-align: center;
 }
@@ -52,6 +53,30 @@ h2{font-size: 60px;}
 .Right {
     text-align: right;
 }
+
+
+.top-Right-title {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
+
+.top-Right-text {
+    position: absolute;
+    top: 200px;
+    right:125px;
+}
+
+
+
+.events-text {
+    position: absolute;
+    top: 250px;
+    right:100px;
+}
+
+
+
 
 
 
@@ -73,9 +98,22 @@ body{
 </div>
 
 
-<h2 style="color: rgb(220, 207, 194);"> MC</h2> 
     <img src="MAP.png" alt="Navmap"
     usemap="#NAVMAP" width="800" height="1403">
+
+    <div class="top-Right-title">
+        <h1> Main Events:</h1> 
+    </div>
+
+    
+    <div class="top-Right-text">
+        <h1> Room-Event-Time</h1> 
+    </div>
+
+
+    <div class="events-text">
+        <p>MI204,Unity talk, 10:00am</p> 
+    </div>
 
     <map name="NAVMAP">
         <area shape="rect" coords="60,10,370,150"
@@ -97,11 +135,15 @@ body{
 
         <area shape="rect" coords="20,420,320,850"
         alt="MD" href="MD.html">
-            
+
+        
         <area shape="rect" coords="90,900,570,1110"
         alt="MA" href="MA.html">
 
-    </map>
+
+    </map>   
+
+
 
 
 </body>
