@@ -42,6 +42,8 @@
 /*Headings & Texts*/
 h1{font-size: 40px;}
 h2{font-size: 60px;}
+h3{font-size: 50px;
+    right: 80px;}
 .Center {
     text-align: center;
 }
@@ -58,6 +60,18 @@ h2{font-size: 60px;}
     position: fixed;right: 100px;
 }
 
+.textarea {
+        
+    height: 500px ; 
+    background-color: rgb(220, 207, 194);
+    position:absolute;
+    top: 300px;
+    right: 100px;
+    
+    
+    
+   
+}
 
 
   /*background*/
@@ -68,17 +82,24 @@ body{
 </style>
 </head>
 <body>
-
 <ul>
     <div class="Left">
         <li><a style ="width: 200;" href ="Home.html"><h1>Home</h1> </a></li>
         <li><a style ="width: 100;" href ="Contact Us.html"><h1>Contact Us</h1> </a></li>
+
     </div>
     <div class="Center">
         <h2 style="color: rgb(255, 245, 245);"> Home</h2> 
     </div>
-
+    
+        
+    
 </ul>
+</div>
+<div class="textarea"> <h3>Main Events</h3></label>
+    <textarea id="Home"
+    placeholder="events"
+    style="border-color: rgb(220, 207, 194);height: 300px; width: 250px ; background-color: rgb(220, 207, 194);"></textarea>
 </div>
 
   <!-- clock-->
@@ -104,14 +125,19 @@ body{
         return i;
     
         }
+
+        
     </script>
+
+
     </body>
 
 <!--Navmap-->
 <h2 style="color: rgb(220, 207, 194);"> MB</h2> 
+
+
     <img src="MAP.png" alt="Navmap"
     usemap="#NAVMAP" width="800" height="1403">
-
     <map name="NAVMAP">
         <area shape="rect" coords="60,10,370,150"
         alt="MK" href="MK.html">
@@ -137,6 +163,9 @@ body{
         <area shape="rect" coords="90,900,570,1110"
         alt="MA" href="MA.html">
 
+
+        
+  
 
     </map>
 
