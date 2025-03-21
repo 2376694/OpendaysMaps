@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<style>
+      /*Navbar*/
+ ul{
+        list-style-type: none; 
+        margin: 0px;
+        width: 100%;
+        height: 150px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: rgb(105, 90, 90);
+        
+    }
+    li {
+        
+        float: left;
+    }
+
+    li a {
+        display: block;
+       
+        width: 300px;
+        height: 100px;
+        text-align: center;
+        color: rgb(255, 245, 245);
+        padding: 30px;
+        margin: 0;
+        overflow: hidden;
+        text-decoration: solid;
+        
+
+       
+    }
+    
+    li a:hover {
+        background-color: rgb(87, 33, 33);
+
+    }
+    /*Headings & Texts*/
+h1{font-size: 40px;}
+h2{font-size: 60px;}
+h3{font-size: 30px;}
+h4{font-size: 20px;}
+
+.Center {
+    text-align: center;
+}
+
+.Left {
+    text-align: left;
+}
+
+.Right {
+    text-align: right;
+}
+
+
+/*background*/
+body{
+    background-color: rgb(220, 207, 194);
+}
+      /*contact us area*/
+input[type=text],select,textarea {
+    width: 100%;
+    padding: 25px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 60px;
+    resize: vertical;
+    background-color: rgb(220, 207, 194);
+    font-size: 25px;
+    
+}
+
+
+
+ /*submit button*/
+input[type=submit] {
+    right: 50%;
+    color:rgb(105, 90, 90);
+    padding: 50px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(220, 207, 194);
+
+}
+
+ /*submit button hover*/
+input[type=submit]:hover{
+    right: 50%;
+    background-color: rgb(196, 196, 196);
+
+}
+
+
+
+.input-area{
+
+    border-radius: 10px;
+    background-color: rgb(136, 110, 110);
+    padding: 50px;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<ul>
+    <div class="Left">
+        <li><a style ="width: 300;" href ="Home.html"><h1>Home</h1> </a></li>
+    </div>
+    <div class="Center">
+        <h2 style="color: rgb(255, 245, 245);"> Contact Us</h2> 
+    </div>
+</ul>
+
+</div>
+<h2>Contact Form</h2>
+<div class ="input-area">
+    <form action="/submit-form" method="post">
+        <label for="Name"><h3>Name</h3></label>
+        <input type="text" id="Name" name="Name" 
+        placeholder="Your Name..." required>
+
+
+        <label for="ID"> <h3>ID</h3></label>
+        <input type="text" id="ID" name="ID" 
+        placeholder="Your student number..." required>
+
+
+        <label for="Email"> <h3>Email</h3></label>
+        <input type="text" id="Email" name="Email" 
+        placeholder="Your Email..." required>
+
+
+        <label for="Subject"> <h3>Subject</h3></label>
+        <input type="text" id="Subject" name="Subject" 
+        placeholder="Subject..." required>
+        
+
+        <label for="Details"> <h3>Details</h3></label>
+        <textarea id="Details" name="Details"
+        placeholder="Explain your issue here..."
+        style="height: 200px ; background-color: rgb(220, 207, 194);" required></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+
+
+</body>
+</html>
