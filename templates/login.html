@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <div class="welcome-container">
+        <h1 class="welcome-title">Welcome to <span class="highlight">OpendaysMaps</span></h1>
+        <p class="welcome-subtitle">Explore events and locations with ease.</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password..." required>
+
+            <input type="submit" value="Login">
+        </form>
+        <div class="links">
+            <a href="/register">Don't have an account? Register</a>
+            <a href="/forgot-password">Forgot Password?</a>
+            <a href="/contact-us">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+{% if error %}
+<script>
+    alert("Invalid email or password. Please try again.");
+</script>
+{% endif %}
+{% endblock %}
