@@ -53,3 +53,5 @@ Before running the application, ensure you have the following installed:
 
 5. Access the Application: Open your browser and navigate to
     http://127.0.0.1:5000
+
+Developed by Ashen Charuka Fernando Chakrawarthige - 2413207
