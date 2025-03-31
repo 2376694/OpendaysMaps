@@ -29,18 +29,26 @@ Before running the application, ensure you have the following installed:
 ## Setup Instructions
 
 1. Clone the Repository
+```CMD
    git clone https://github.com/2376694/OpendaysMaps
    cd OpendaysMaps
+```
 
 2. Set Up a Virtual Environment (optional but recommended)
+```CMD
     python -m venv .venv
-    .venv\Scripts\activate 
+    .venv\Scripts\activate
+```     
 
 3. Install Dependencies: Install the required Python packages using the requirements.txt file
+```CMD
     pip install -r requirements.txt
+```
 
 4. Run the aplication
+```CMD
     python main.py
+```
 
 5. Access the Application: Open your browser and navigate to
     http://127.0.0.1:5000
