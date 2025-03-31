@@ -32,6 +32,7 @@ Before running the application, ensure you have the following installed:
 ```CMD
    git clone https://github.com/2376694/OpendaysMaps
    cd OpendaysMaps
+   git checkout login
 ```
 
 2. Set Up a Virtual Environment (optional but recommended)
