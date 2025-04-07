@@ -1,159 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
-<style>
-     /*Navbar*/
-ul{
-        list-style-type: none; 
-        margin: 0px;
-        width: 100%;
-        height: 150px;
-        padding: 0px;
-        overflow: hidden;
-        background-color: rgb(105, 90, 90);
-        
-    }
-    li {
-        
-        float: left;
-    }
-
-    li a {
-        display: block;
-       
-        width: 300px;
-        height: 100px;
-        text-align: center;
-        color: rgb(255, 245, 245);
-        padding: 30px;
-        margin: 0;
-        overflow: hidden;
-        text-decoration: solid;
-        
-
-       
-    }
-    
-    li a:hover {
-        background-color: rgb(87, 33, 33);
-
-    }
-/*Headings & Texts*/
-h1{font-size: 40px;}
-h2{font-size: 60px;}
-h3{font-size: 50px;
-    right: 80px;}
-
-
-.textarea {
-        
-        height: 500px ; 
-        background-color: rgb(220, 207, 194);
-        position:absolute;
-        top: 300px;
-        right: 100px;
-        
-        
-        
-       
-    }
-
-
-.Center {
-    text-align: center;
-}
-
-.Left {
-    text-align: left;
-}
-
-.Right {
-    text-align: right;
-}
-
-
- /*background*/
-body{
-    background-color: rgb(220, 207, 194);
-}
-
-</style>
-</head>
-<body>
-<ul>
-    <div class="Left">
-        <li><a style ="width: 300;" href ="Home.html"><h1>Home</h1> </a></li>
-        <li><a style ="width: 100;" href ="Contact Us.html"><h1>Contact Us</h1> </a></li>
-    </div>
-    <div class="Center">
-        <h2 style="color: rgb(255, 245, 245);"> MB</h2> 
-    </div>
-</ul>
-</div>
-
-<div class="textarea"> <h3>MB Events</h3></label>
-    <textarea id="Home"
-    placeholder="events"
-    style="border-color: rgb(220, 207, 194);height: 300px; width: 250px ; background-color: rgb(220, 207, 194);"></textarea>
-</div>
-
- <!-- clock-->
- <body onload="Time()">
-
-    <div id ="clock1" style ="font-size: 50px; left: 900px;"></div>
-    
-    <script>
-    function Time(){
-        const Day = new Date();
-        let hour = Day.getHours();
-        let min = Day.getMinutes();
-        let sec = Day.getSeconds();
-        min = TimeCheck(min);
-        sec = TimeCheck(sec);   
-        document.getElementById('clock1').innerHTML = hour + ":"+ min +":" + sec;
-        setTimeout(Time,1000); 
-        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Navbar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            background-color: #003A70; /* Wolverhampton Blue */
         }
-    
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            color: #FFD100; /* Light Gray Text */
+            padding: 30px;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #FFD100; /* Gold Accent */
+            color: #003A70;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 50px;
+            margin: 0;
+            color: #003A70;
+        }
+
+        .Center {
+            text-align: center;
+        }
+
+        .Left {
+            text-align: left;
+        }
+
+        .Right {
+            text-align: right;
+        }
+
+        .right {
+            position: fixed;
+            right: 100px;
+        }
+
+        /* Textarea */
+        .textarea {
+            height: 500px;
+            background-color: #F5F5F5; /* Light Gray */
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            border: 2px solid #003A70;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /* Body Background */
+        body {
+            background-color: #F5F5F5; /* Light Gray */
+            font-family: sans-serif;
+            color: #333333; /* Dark Gray text */
+        }
+
+        /* Clock */
+        #clock1 {
+            font-size: 50px;
+            position: absolute;
+            left: 120px;
+            top: 160px;
+            color: #003A70;
+        }
+
+        /* Image Map */
+        #map {
+            margin-top: 100px;
+            width: 900px;
+            height: 1403px;
+        }
+    </style>
+</head>
+<body onload="Time()">
+
+    <!-- Navbar -->
+    <ul>
+        <div class="Left">
+            <li><a style="width: 300px;" href="Home.html"><h1>Home</h1></a></li>
+            <li><a style="width: 300px;" href="Contact Us.html"><h1>Contact Us</h1></a></li>
+        </div>
+    </ul>
+
+    <!-- Main Events Text Area -->
+    <div class="textarea">
+        <h3>MB Events</h3>
+        <textarea id="Home" placeholder="Events" style="border-color: #003A70; height: 300px; width: 250px; background-color: #F5F5F5; color: #333333;"></textarea>
+        
+    </div>
+
+    <!-- Clock -->
+    <div id="clock1"></div>
+    <script>
+        function Time() {
+            const Day = new Date();
+            let hour = Day.getHours();
+            let min = Day.getMinutes();
+            let sec = Day.getSeconds();
+            min = TimeCheck(min);
+            sec = TimeCheck(sec);
+            document.getElementById('clock1').innerHTML = hour + ":" + min + ":" + sec;
+            setTimeout(Time, 1000);
+        }
+
         function TimeCheck(i) {
-            if(i < 10) {i= "0" + 1};
-        return i;
-    
+            return (i < 10) ? "0" + i : i;
         }
     </script>
     </body>
 
 <!--Navmap-->
-<h2 style="color: rgb(220, 207, 194);"> MB</h2> 
+<h2 style="color:#003A70"> MB</h2> 
     <img src="MAP.png" alt="Navmap"
     usemap="#NAVMAP" width="800" height="1403">
-
     <map name="NAVMAP">
-        <area shape="rect" coords="60,10,370,150"
-        alt="MK" href="MK.html">
-
-
-        <area shape="rect" coords="270,350,600,500"
-        alt="MC" href="MC.html">
-
-        <area shape="rect" coords="450,500,700,670"
-        alt="MB" href="MB.html">
-
-        <area shape="rect" coords="500,600,800,990"
-        alt="MI" href="MI.html">
-
- 
-        <area shape="rect" coords="600,1000,800,1210"
-        alt="MG" href="MG.html">
-
-        <area shape="rect" coords="20,420,320,850"
-        alt="MD" href="MD.html">
-            
-        <area shape="rect" coords="90,900,570,1110"
-        alt="MA" href="MA.html">
-
+        <area shape="rect" coords="200,300,450,400" alt="MK" href="MK.html">
+        <area shape="rect" coords="300,500,550,600" alt="MC" href="MC.html">
+        <area shape="rect" coords="450,700,600,630" alt="MB" href="MB.html">
+        <area shape="rect" coords="500,750,650,900" alt="MI" href="MI.html">
+        <area shape="rect" coords="100,500,350,850" alt="MD" href="MD.html">
+        <area shape="rect" coords="150,850,400,1000" alt="MA" href="MA.html">
+        <area shape="rect" coords="400,900,800,1250" alt="MG" href="MG.html">
     </map>
+    
 
 
 </body>
