@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Navbar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            background-color: #003A70; /* Wolverhampton Blue */
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            color: #FFD100; /* Gold Accent */
+            padding: 30px;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #FFD100; /* Gold Accent */
+            color: #003A70;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 50px;
+            margin: 0;
+            color: #003A70; /* Wolverhampton Blue */
+        }
+
+        .Center {
+            text-align: center;
+        }
+
+        .Left {
+            text-align: left;
+        }
+
+        .Right {
+            text-align: right;
+        }
+
+        /* Text Area */
+        .textarea {
+            height: 500px;
+            background-color: #F5F5F5; /* Light Gray */
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            border: 2px solid #003A70;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /* Body */
+        body {
+            background-color: #F5F5F5; /* Light Gray */
+            font-family: sans-serif;
+            color: #333333; /* Dark Gray Text */
+        }
+
+        /* Clock */
+        #clock1 {
+            font-size: 50px;
+            position: absolute;
+            left: 120px;
+            top: 160px;
+            color: #003A70;
+        }
+
+        /* Image Map */
+        #map {
+            margin-top: 100px;
+            width: 900px;
+            height: 1403px;
+        }
+    </style>
+</head>
+<body onload="Time()">
+
+    <!-- Navbar -->
+    <ul>
+        <div class="Left">
+            <li><a href="Home.html"><h1>Home</h1></a></li>
+            <li><a href="/contact-us"><h1>Contact Us</h1></a></li>
+        </div>
+    </ul>
+
+    <!-- Main Events Text Area -->
+    <div class="textarea">
+        <h3>MC Events</h3>
+        <textarea id="Home" placeholder="Events" style="border-color: #003A70; height: 300px; width: 250px; background-color: #F5F5F5; color: #333333;"></textarea>
+    </div>
+
+    <!-- Clock -->
+    <div id="clock1"></div>
+    <script>
+        function Time() {
+            const Day = new Date();
+            let hour = Day.getHours();
+            let min = Day.getMinutes();
+            let sec = Day.getSeconds();
+            min = TimeCheck(min);
+            sec = TimeCheck(sec);
+            document.getElementById('clock1').innerHTML = hour + ":" + min + ":" + sec;
+            setTimeout(Time, 1000);
+        }
+
+        function TimeCheck(i) {
+            return (i < 10) ? "0" + i : i;
+        }
+    </script>
+    </body>
+
+<!--Navmap-->
+<h2 style="color: #003A70"> MC</h2> 
+    <img src="MAP.png" alt="Navmap"
+    usemap="#NAVMAP" width="800" height="1403">
+    <map name="NAVMAP">
+        <area shape="rect" coords="200,300,450,400" alt="MK" href="MK.html">
+        <area shape="rect" coords="300,500,550,600" alt="MC" href="MC.html">
+        <area shape="rect" coords="450,700,600,630" alt="MB" href="MB.html">
+        <area shape="rect" coords="500,750,650,900" alt="MI" href="MI.html">
+        <area shape="rect" coords="100,500,350,850" alt="MD" href="MD.html">
+        <area shape="rect" coords="150,850,400,1000" alt="MA" href="MA.html">
+        <area shape="rect" coords="400,900,800,1250" alt="MG" href="MG.html">
+    </map>
+    
+
+</body>
+</html>

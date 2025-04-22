@@ -1,0 +1,45 @@
+2025-04-18 04:44:23,327 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-18 04:44:23,328 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 04:44:31,642 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:44:31] "[31m[1mGET /contact-us HTTP/1.1[0m" 403 -
+2025-04-18 04:44:33,702 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:44:33] "[31m[1mGET /contact-us HTTP/1.1[0m" 403 -
+2025-04-18 04:44:46,183 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-18 04:44:46,188 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 04:44:49,983 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:44:49] "[31m[1mGET /contact-us HTTP/1.1[0m" 403 -
+2025-04-18 04:45:08,405 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:45:08] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-18 04:47:42,852 - __main__ - INFO - SQLite database initialized
+2025-04-18 04:47:42,979 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-18 04:47:42,980 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 04:47:42,983 - werkzeug - INFO -  * Restarting with stat
+2025-04-18 04:47:44,086 - __main__ - INFO - SQLite database initialized
+2025-04-18 04:47:44,307 - werkzeug - WARNING -  * Debugger is active!
+2025-04-18 04:47:44,371 - werkzeug - INFO -  * Debugger PIN: 728-992-623
+2025-04-18 04:47:50,697 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:47:50] "GET /contact-us HTTP/1.1" 200 -
+2025-04-18 04:48:06,600 - __main__ - INFO - Successfully saved form submission from meme@gmail.com
+2025-04-18 04:48:06,607 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:06] "POST /submit-form HTTP/1.1" 200 -
+2025-04-18 04:48:08,979 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:08] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-18 04:48:09,039 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:09] "GET /login HTTP/1.1" 200 -
+2025-04-18 04:48:41,098 - __main__ - INFO - Successful login for mememan7011@gmail.com
+2025-04-18 04:48:41,101 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-18 04:48:41,125 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:41] "GET / HTTP/1.1" 200 -
+2025-04-18 04:48:41,196 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:41] "[36mGET /MAP.png HTTP/1.1[0m" 304 -
+2025-04-18 04:48:42,654 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:42] "[36mGET /contact-us HTTP/1.1[0m" 304 -
+2025-04-18 04:48:52,755 - __main__ - INFO - Successfully saved form submission from nishatitan5550@gmail.com
+2025-04-18 04:48:52,759 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:52] "POST /submit-form HTTP/1.1" 200 -
+2025-04-18 04:48:54,730 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:54] "[36mGET / HTTP/1.1[0m" 304 -
+2025-04-18 04:48:54,831 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:48:54] "[36mGET /MAP.png HTTP/1.1[0m" 304 -
+2025-04-18 04:50:55,603 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:50:55] "[36mGET /contact-us HTTP/1.1[0m" 304 -
+2025-04-18 04:52:24,334 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:52:24] "GET /Home.html HTTP/1.1" 200 -
+2025-04-18 04:52:24,417 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:52:24] "[36mGET /MAP.png HTTP/1.1[0m" 304 -
+2025-04-18 04:52:30,139 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:52:30] "[36mGET / HTTP/1.1[0m" 304 -
+2025-04-18 04:52:30,256 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:52:30] "[36mGET /MAP.png HTTP/1.1[0m" 304 -
+2025-04-18 04:52:33,216 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:52:33] "[36mGET /contact-us HTTP/1.1[0m" 304 -
+2025-04-18 04:52:49,186 - __main__ - WARNING - Validation errors: Invalid student ID format, Invalid email format
+2025-04-18 04:52:49,191 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:52:49] "POST /submit-form HTTP/1.1" 200 -
+2025-04-18 04:52:53,058 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:52:53] "[36mGET /contact-us HTTP/1.1[0m" 304 -
+2025-04-18 04:53:07,886 - __main__ - INFO - Successfully saved form submission from meme@gmail.com
+2025-04-18 04:53:07,894 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:53:07] "POST /submit-form HTTP/1.1" 200 -
+2025-04-18 04:53:12,019 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:53:12] "[36mGET / HTTP/1.1[0m" 304 -
+2025-04-18 04:53:12,111 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 04:53:12] "[36mGET /MAP.png HTTP/1.1[0m" 304 -

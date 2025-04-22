@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - University of Wolverhampton</title>
+    <style>
+        body {
+            background-color: #F5F5F5; /* Light Gray */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333333; /* Dark Gray text */
+        }
+        
+        .error-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid #003A70; /* Wolverhampton Blue */
+        }
+        
+        h1 {
+            color: #003A70; /* Wolverhampton Blue */
+            font-size: 32px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #003A70; /* Wolverhampton Blue */
+            color: #FFD100; /* Gold Accent */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            background-color: #FFD100; /* Gold Accent */
+            color: #003A70; /* Wolverhampton Blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Oops! Something went wrong</h1>
+        <p>{{ error }}</p>
+        <p>Please try again or contact support if the problem persists.</p>
+        <a href="/">Return to Home</a>
+    </div>
+</body>
+</html>

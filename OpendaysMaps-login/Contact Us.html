@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+<style>
+      /*Navbar*/
+      ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            background-color: #003A70; /* Wolverhampton Blue */
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            color: #FFD100; /* Light Gray Text */
+            padding: 30px;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #FFD100; /* Gold Accent */
+            color: #003A70;
+        }
+    /*Headings & Texts*/
+      /* Headings */
+      h1 {
+            font-size: 40px;
+            margin: 0;
+
+        }
+
+        h2 {
+            font-size: 60px;
+            margin: 0;
+          
+        }
+
+        h3 {
+            font-size: 50px;
+            margin: 0;
+            color: #003A70;
+            
+        }
+
+        .Center {
+            text-align: center;
+        }
+
+        .Left {
+            text-align: left;
+        }
+
+        .Right {
+            text-align: right;
+        }
+
+
+/*background*/
+body {
+            background-color: #F5F5F5; /* Light Gray */
+            font-family: sans-serif;
+            color: #333333; /* Dark Gray text */
+        }
+      /*contact us area*/
+input[type=text],select,textarea {
+    width: 100%;
+    padding: 25px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 60px;
+    resize: vertical;
+    background-color: #dfdfdf;
+    font-size: 25px;
+    
+}
+
+
+
+ /*submit button*/
+input[type=submit] {
+    right: 50%;
+    color:rgb(0, 0, 0);
+    padding: 50px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #003A70; 
+    color: #FFD100;/* Gold Accent */
+
+}
+
+ /*submit button hover*/
+input[type=submit]:hover{
+    right: 50%;
+    background-color: #FFD100; /* Gold Accent */
+    color: #003A70;
+}
+
+
+
+.input-area{
+
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    padding: 50px;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+<ul>
+    <div class="Left">
+        <li><a style="width: 300px;" href="Home.html"><h1>Home</h1></a></li>
+    </div>
+    <div class="Center">
+        <li><a style="width: 300px;" href="/contact-us"><h1>Contact Us</h1></a></li>
+    </div>
+</ul>
+
+</div>
+<h2>Contact Form</h2>
+<div class ="input-area">
+    <form action="/submit-form" method="POST">
+        <label for="Name"><h3>Name</h3></label>
+        <input type="text" id="Name" name="Name" placeholder="Your Name...">
+    
+        <label for="ID"><h3>ID</h3></label>
+        <input type="text" id="ID" name="ID" placeholder="Your student number...">
+    
+        <label for="Email"><h3>Email</h3></label>
+        <input type="text" id="Email" name="Email" placeholder="Your Email...">
+    
+        <label for="Subject"><h3>Subject</h3></label>
+        <input type="text" id="Subject" name="Subject" placeholder="Subject...">
+    
+        <label for="Details"><h3>Details</h3></label>
+        <textarea id="Details" name="Details" placeholder="Explain your issue here..." style="height: 200px; background-color: #dfdfdf;"></textarea>
+    
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+</body>
+</html>
